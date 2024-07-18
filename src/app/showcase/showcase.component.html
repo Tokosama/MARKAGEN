@@ -1,0 +1,22 @@
+<div class="my-5">
+    <div class="mx-auto text-center">
+        <div style="font-size:64px;">Our Work </div>
+        <div style="font-size:18px;">A glimpse of our portfolio</div>
+    </div>
+
+
+    <div class="container  d-flex  text-center mt-2 mb-5">
+        <div class="row ">
+            <div class="col-4 mt-5"  *ngFor="let item of items | slice:0:visibleItems">
+
+                <app-showcase-item [title]="item.title" [imagePath]="item.imagePath"></app-showcase-item>
+            
+            </div> 
+        </div>
+    </div>
+    <div class="text-center " >
+        <button class="btn btn-primary rounded-5 col-1 fs-5" style="width:203px ; height: 64px;" (click)="loadMore()">{{buttonState}}</button>
+      </div>
+
+   
+</div>

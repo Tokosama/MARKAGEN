@@ -1,0 +1,42 @@
+<div class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mx-auto" >
+                <div class="container-fluid my-4">
+                    <div class="row">
+                       <div class="col-6 text-center mt-4 text-light" style="font-size: 64px;">
+                        <div class="container-fluid">
+                            <div class="row" >
+                                <div class="col-4 mt-2"  style="height: 190px;" *ngFor="let member of members | slice:0:visibleItems" >
+                                    <img  class=" img-fluid" [src]=member.imagePath alt="">
+                                </div>  
+                            </div>
+                            
+                        </div>
+
+                       </div>
+                       <div class="col-6  d-flex flex-column " >
+                            <div class=" ms-5 mt-2" >
+                                <div class="ms-5  " style=" font-size:64px">
+                                    Meet Our Team
+                                </div>
+                                <div class="ms-5 my-4 " style=" font-size:16px">
+                                    Discover the brilliance behind  Embrace. Our team blends innovation and artistry to craft digital wonders that captivate
+                                </div>
+                               
+                            </div>
+                            <div class=" ms-5 mb-2  
+                             mt-auto">
+                                <button class="btn btn-primary ms-5 mt-4 px-5 py-2 rounded-pill  " style="margin-top:auto; font-size: 22px;" (click)="loadMore()">Book Call</button>
+
+
+                            </div>
+                       </div>
+                       
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>

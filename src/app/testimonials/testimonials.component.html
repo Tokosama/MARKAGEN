@@ -1,0 +1,49 @@
+<div class="" style="margin-top: 200px;">
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="ms-4 d-flex">
+                <div class="" style="font-size: 64px;">What Our Client Said about us</div>
+                <div class="d-flex align-middle ms-auto" > 
+                    <button class="btn btn-primary p-4 mx-2 rounded-circle" 
+                        style="width: 85px; height:85px; "
+                        (click)="prev()"
+                        
+                        [ngClass]="{ 'btn-light text-light' : 0 === currentIndex, 'bg-light': 0 !== currentIndex }"
+                       
+                        >
+                            <span>
+                                <img src="assets/icons/leftvector.png"style="width: 24px; height:24px">
+                            </span>
+                    </button>
+                    <button class="btn btn-primary p-4 mx-2 rounded-circle"
+                     style="width: 85px; height:85px; "
+                     (click)="next()"
+                     [ngClass]="{ 'btn-light text-light' : informations.length -1 === currentIndex, 'btn-primary':informations.length-1 !== currentIndex }"
+                     ><span> <img src="assets/icons/vector.png" style="width: 24px; height:24px"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12"></div>
+    </div>
+</div>
+    
+
+    <div class="container-fluid mt-5 mb-5">
+        <div class="row overflow-hidden position-relative"  style="padding: 0px 0px 0px 0vw;">
+        <div class="d-flex " [ngStyle]="getCarouselStyles()">
+            <div class="col-4 mt-5  rounded-5   ms-4" 
+                *ngFor="let info of informations; let i = index" 
+                [ngClass]="{ 'bg-primary text-light' : i === currentIndex, 'bg-light': i !== currentIndex }"
+                [ngStyle]="getDynamicStyles(i)">
+            <app-carroussel-item  
+                [name]="info.name" 
+                [post]="info.post" 
+                [imagePath]="info.imagePath" 
+                [description]="info.description"></app-carroussel-item>
+            </div>
+        </div>
+        </div>
+       
+    </div>
+</div>
