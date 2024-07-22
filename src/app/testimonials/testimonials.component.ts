@@ -44,7 +44,7 @@ export class TestimonialsComponent {
   }
 
   getCarouselStyles() {
-    const colClass = 'col-4'; // Change this according to your column class
+    const colClass = 'col-4'; 
     const colWidth = this.getBootstrapColWidth(colClass);
     const offset = -this.currentIndex * colWidth;
     return {

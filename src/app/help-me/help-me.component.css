@@ -1,0 +1,73 @@
+
+        .helpme {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 150px;
+        }
+        .p1 .p2 {
+            position: relative;
+        }
+        .p2 {
+            margin-top: -20px;
+        }
+
+        .p1::before, .p1::after {
+            content: "";
+            display: block;
+            height: 2px;
+            background: black;
+            margin: 10px 0;
+            opacity: 0.2;
+        }
+        .p1 h4 {
+            position: relative;
+            padding-right: 50px; /* Adjust padding to make room for the button */
+        }
+        .p1 h4:not(:first-child)::before {
+            content: "";
+            display: block;
+            height: 2px;
+            background: black;
+            margin: 10px 0;
+            opacity: 0.2;
+        }
+        .p1 h4::after {
+            content: "+";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #3461FF;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 50%;
+        }
+        form {
+            margin-top: 10px;
+        }
+        input[type="email"] {
+            padding: 5px;
+            font-size: 14px;
+            margin-right: 10px;
+            border-radius: 25px;
+            border-style: solid;
+            border-color: whitesmoke;
+        }
+        .lt {
+            background-color: #3461FF;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 25px;
+        }
+        button {
+            color: #3461FF;
+            border: none;
+            cursor: pointer;
+            font-size: medium;
+            margin-top: 15px;
+        }

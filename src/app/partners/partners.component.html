@@ -1,0 +1,24 @@
+<div class="bg-light " style="margin-top: 100px; padding-top:100px;">
+
+
+    <div class="container py-5"style="background: #FAFAFA; ">
+        <div class="text-center mb-5 fw-medium ">
+            <h2 class="text-capitalize" style="color: black; font-family: 'General Sans Variable'; font-weight: 500; font-size:36px;">Companies we work with</h2>
+        </div>
+        <div class="row  d-flex justify-content-between justify-content-around align-items my-5">
+            <div *ngFor="let partner of limitedPartners; let i = index" class="col my-5">
+                <img [src]="partner.logo" class="img-fluid" >
+              </div>
+        </div>
+        <div class="row d-flex justify-content-between align-items-center my-5">
+            <div *ngFor="let partner of limitedPartners2; let i = index" class="col my-5">
+                <img [src]="partner.logo" class="img-fluid" >
+              </div>
+        </div>
+        
+    </div>
+
+
+</div>
+
+

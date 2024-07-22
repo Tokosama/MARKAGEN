@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+.c1 {
+  margin-top: 50px;
+  width: 900px;
+  height: 500px;
+}
+.c1 h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: black;
+}
+.c1 p {
+  font-size: 1.25rem;
+}
+.c2 {
+  width: 100%;
+  height: 100%;
+}
+.c2 img {
+  width: 80%;
+  height: 80%;
+}
+
+
+
+.nav-custom2 {
+  margin: auto;
+  font-weight: 700;
+}
+.nav-item {
+  margin-right: 30px;
+  font-size: 16px;
+}
+hr {
+  margin-top: -2px;
+  background-color: rgba(128, 128, 128, 0);
+}
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top:   50px;
+  margin-left: 10%;
+}
